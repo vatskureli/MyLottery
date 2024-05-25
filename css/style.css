@@ -1,0 +1,326 @@
+
+:root{
+    --bgcolor: #EAEEFF;
+    --white: #FFFFFF;
+    --darkgrey: #2B2D42;
+    --purple: #7B2CBF;
+    --font: 'TBC Contractica CAPS';
+    --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+div{
+    overflow: hidden;
+}
+body{
+    background: var(--bgcolor);
+    font-family: var(--font);
+}
+
+.burgerbar{
+    display: none;
+}
+.mobile-logo{
+    display: none;
+}
+.container{
+    max-width: 1164px;
+    width: 100%;
+    margin: 0 auto;
+}
+.section-title{
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.sec-box-wraper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+}
+.section-title h2{
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: #2B2D42;
+    text-shadow: var(--shadow);
+    margin-top: 42px;
+}
+.section-span{
+    background: #4F5054;
+}
+.sec-box{
+    max-width: 55px;
+    width: 100%;
+    height: 23px;
+    background: var(--darkgrey);
+    box-shadow: var(--shadow);
+    border-radius:5px;
+}
+.sec-active{
+    background: var(--purple);
+}
+
+/* NAVIGATION */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    gap: 31px;
+}
+.reg-auth-button .nav-link{
+    color: var(--white);
+}
+.reg-auth-button{
+    font-family: var(--font);
+    padding: 23px 20px;
+    background: linear-gradient(90deg, #9D4EDD 0%, #DF00F2 100%);
+    border-radius: 10px;
+}
+.nav-link{
+    font-family: var(--font);
+    color:#000000;
+}
+.login-link::after{
+    content: '/';
+    margin-left: 5px;
+}
+
+/* HERO SECTION */
+ 
+.hero-wraper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+ 
+.hero-left-side h2{
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 54px;
+    letter-spacing: 0.57em;
+    text-transform: uppercase;
+    color: #000000;
+    text-shadow: var(--shadow);
+}
+.hero-left-side p{
+    max-width: 507px;
+    width: 100%;
+    margin-top: 43px;
+    margin-bottom: 43px;
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+    text-shadow: var(--shadow);
+}
+
+.btn{
+    background: linear-gradient(90deg, #9D4EDD 0%, #DF00F2 100%);
+    border-radius: 10px;
+    padding: 25px 30px;
+    max-width: 233.16px;
+    width: 100%;
+}
+.btn span{
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--white);
+}
+.hero-right-side{
+    max-width: 657px;
+    width: 100%;
+}
+.hero-right-side img{
+    width: 100%;
+}
+/* ABOUT */
+.about-wraper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 58px;
+}
+.about-box{
+    max-width: 360px;
+    width: 100%;
+    background-color: var(--darkgrey);
+    border-radius: 15px;
+ 
+}
+.about-box-title{
+    font-family: var(--font);
+    color: var(--white);
+    font-size: 50px;
+    margin-top: 24px;
+    margin-left: 32px;
+}
+.about-box-title span{
+    font-size: 25px;
+    margin-left: 14px;
+}
+.about-box p{
+    font-family: var(--font);
+    font-size: 15px;
+    color: var(--white);
+    line-height: 18px;
+    margin: 14px 75px 62px 32px;
+}
+
+
+
+/* AUCTIONS */
+.auction-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-bottom: 20px;
+}
+.auction{
+    background: #E8E6FD;
+    max-width: 550px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: var(--shadow);
+}
+.auction-content{
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    align-items: center;
+}
+.prod-img{
+    background-color: var(--bgcolor);
+    padding: 28px;
+    border-radius: 10px;
+}
+.auction-date{
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bgcolor);
+}
+.day-counter{
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bgcolor);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.day-counter-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selled-bids{
+    margin-top: 26px;
+}
+
+.auc-progress{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    /* padding: 10px; */
+    margin-top: 10px;
+}
+.first{
+    width: 100%;
+    background-color: #53A2FF;
+}
+.second{
+    width: 100%;
+    background-color: #3FFD96;
+}
+.three{
+    width: 100%;
+    background-color: #9D4EDD;
+}
+.get-progress-price{
+    max-width: 25px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--darkgrey);
+    color: var(--bgcolor);
+    font-size: 10px;
+    padding: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bids-about{
+    max-width: 320px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.ac-middle{
+    margin-top: 15px;
+    max-width: 550px;
+    width: 100%;
+    display: flex;
+    padding: 18px;
+    justify-content: space-between;
+}
+
+.go-to-auction{
+    background-color: var(--bgcolor);
+    border-radius: 10px;
+    display: flex;
+    margin-right: 18px;
+    margin-left: 18px;
+    justify-content: space-between;
+    box-shadow: var(--shadow);
+}
+.bid-price{
+    margin-left: 18px;
+    margin-top: 14px;
+}
+.bid-price h3{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: var(--font);
+}
+.go-to-auction-btn{
+    background-color: var(--darkgrey);
+    color: var(--bgcolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px 22px;
+}
